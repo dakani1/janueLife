@@ -1,0 +1,40 @@
+@import "./var.scss";
+#header {
+  height: 60px;
+  background-color: $fontColor;
+  .header-info {
+    line-height: 60px;
+    font-weight: normal;
+    font-stretch: normal;
+    letter-spacing: 0px;
+    color: $white;
+    li {
+      .icon-youxiang {
+        font-size: 18px;
+        margin-right: 3px;
+      }
+      .icon-dianhua {
+        font-size: 20px;
+        margin-right: 3px;
+      }
+      i, span {
+        vertical-align: middle;
+      }
+      span + span {
+        margin-left: 5px;
+      }
+    }
+    li + li {
+      margin-left: 20px;
+    }
+  }
+
+  .header-oper {
+    .country-select {
+
+    }
+    .search (
+      background-color: white;
+    )
+  }
+}
