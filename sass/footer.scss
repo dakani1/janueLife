@@ -1,0 +1,78 @@
+#footer{
+  color: white;
+  padding: 40px 0 0;
+  background-color: black;
+  .spaceBetween{
+    align-items: flex-start;
+    padding-bottom: 46px;
+  }
+  dt {
+    font-size: 22px;
+    text-transform: uppercase;
+    margin-bottom: 46px;
+  }
+  dd {
+    line-height: 24px;
+  }
+  dd + dd {
+    margin-top: 20px;
+  }
+
+  .contact{
+    width: 455px;
+    dd {
+      padding-left: 28px;
+      position: relative;
+      i.iconfont {
+        position: absolute;
+        left: 0;
+        top: 1px;
+        font-size: 18px;
+      }
+      i.icon-dizhi {
+        font-size: 21px;
+      }
+    }
+  }
+  .aboutUs, .information{
+    dd {
+      padding-left: 18px;
+      position: relative;
+      &:before {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 8px;
+        height: 8px;
+        background-color: white;
+        content: ' ';
+      }
+      i.icon-dizhi {
+        font-size: 21px;
+      }
+    }
+  }
+  .links {
+    width: 510px;
+    dd {
+      a + a {
+        margin-left: 10px;
+      }
+    }
+  }
+
+  .copyright{
+    text-align: center;
+    padding: 14px 0 12px;
+    background-color: white;
+    p {
+      font-size: 12px;
+      font-weight: normal;
+      font-stretch: normal;
+      line-height: $font20;
+      color: #666666;
+    }
+  }
+}
