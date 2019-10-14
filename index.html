@@ -86,7 +86,7 @@
       <div class="feature center-main">
         <div class="title"><span>FEATURED PRODUCTS</span></div>
         <div class="swiper-main">
-          <div class="swiper-container feature-swiper">
+          <div class="swiper-container feature-swiper feature-part">
             <div class="swiper-wrapper">
               <a class="swiper-slide" href="#">
                 <div href="#" class="swiper-img">
@@ -120,10 +120,10 @@
               </a>
             </div>
           </div>
-          <div class="swiper-button-prev">
+          <div class="swiper-button-prev feature-prev">
             <i class="iconfont icon-zuohua"></i>
           </div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
-          <div class="swiper-button-next">
+          <div class="swiper-button-next feature-next">
             <i class="iconfont icon-youhua"></i>
           </div><!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
         </div>
@@ -133,7 +133,7 @@
       <div class="feature center-main">
         <div class="title"><span>HOT PRODUCTS</span></div>
         <div class="swiper-main">
-          <div class="swiper-container feature-swiper">
+          <div class="swiper-container feature-swiper hot-part">
             <div class="swiper-wrapper">
               <a class="swiper-slide" href="#">
                 <div href="#" class="swiper-img">
@@ -161,10 +161,10 @@
               </a>
             </div>
           </div>
-          <div class="swiper-button-prev">
+          <div class="swiper-button-prev hot-prev">
             <i class="iconfont icon-zuohua"></i>
           </div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
-          <div class="swiper-button-next">
+          <div class="swiper-button-next  hot-next">
             <i class="iconfont icon-youhua"></i>
           </div><!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
         </div>
@@ -343,13 +343,22 @@
       watchOverflow: true //因为仅有1个slide，swiper无效
     });
 
-    var swiper = new Swiper('.feature-swiper', {
+    var swiperFeature = new Swiper('.feature-part', {
       slidesPerView: 4,
       spaceBetween: 32,
       navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
+        nextEl: '.feature-next',
+        prevEl: '.feature-prev',
       }
     });
+    var swiperHot = new Swiper('.hot-part', {
+      slidesPerView: 4,
+      spaceBetween: 32,
+      navigation: {
+        nextEl: '.hot-next',
+        prevEl: '.hot-prev',
+      }
+    });
+
   </script>
 </html>
