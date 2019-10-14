@@ -39,6 +39,16 @@ input:-webkit-autofill {
   color: #000;
 }
 
+a {
+  color: #1a1a1a;
+  text-decoration: none;
+  outline: none;
+}
+
+a:focus, a:visited, a:link {
+  outline: none;
+}
+
 textarea {
   resize: none;
 }
@@ -125,6 +135,13 @@ body {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  align-items: center;
+}
+
+.spaceCenter {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
 }
 

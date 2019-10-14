@@ -1,11 +1,16 @@
 #footer {
   color: white;
-  padding: 40px 0 46px;
-  background-color: black;
+  padding: 40px 0 0;
+  background-color: #121212;
 }
 
 #footer .spaceBetween {
   align-items: flex-start;
+  padding-bottom: 46px;
+}
+
+#footer a {
+  color: white;
 }
 
 #footer dt {
@@ -67,8 +72,57 @@
   width: 510px;
 }
 
+#footer .links dd {
+  line-height: 1;
+}
+
+#footer .links dd a {
+  display: inline-block;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+#footer .links dd a i {
+  font-size: 64px;
+  background-color: white;
+}
+
+#footer .links dd a i.icon-tubiao-3 {
+  color: #3b5998;
+}
+
+#footer .links dd a i.icon-tubiao- {
+  color: #007ab9;
+}
+
+#footer .links dd a i.icon-tubiao-4 {
+  color: #cd332d;
+}
+
+#footer .links dd a i.icon-tubiao-5 {
+  color: #4099ff;
+}
+
+#footer .links dd a i.icon-tubiao-1 {
+  color: #4ac9f1;
+}
+
+#footer .links dd a i.icon-tubiao-2 {
+  color: #c5161b;
+}
+
+#footer .links dd a i.icon-tubiao-6 {
+  color: #ff517c;
+}
+
 #footer .links dd a + a {
   margin-left: 10px;
+}
+
+#footer .copyright {
+  text-align: center;
+  padding: 14px 0 12px;
+  background-color: white;
 }
 
 #footer .copyright p {

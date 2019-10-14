@@ -11,11 +11,345 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0">
     <meta name="Keywords" content="" />
     <meta name="Description" content="" />
-    <link rel="stylesheet" href="./style/reset.min.css">
+    <link rel="stylesheet" href="./sass/reset.min.css">
     <link href="./fonts/iconfont.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="./style/index.min.css">
+    <link rel="stylesheet" href="./sass/index.min.css">
+    <link rel="stylesheet" href="./sass/swiper.min.css">
+    <script src="./js/vue.min.js"></script>
   </head>
   <body>
-    111
+    <div id="app1">
+      <div id="header">
+        <div id="header-aside">
+          <div class="center-main spaceBetween">
+            <ul class="header-info spaceStart">
+              <li>
+                <i class="iconfont icon-youxiang"></i>
+                <a href="mailto:marketing@januelife.com">marketing@januelife.com</a><a href="mailto:jacky@januelife.com">jacky@januelife.com</a>
+              </li>
+              <li>
+                <i class="iconfont icon-dianhua"></i>
+                <span>86-755-23572823</span>
+              </li>
+            </ul>
+            <div class="header-oper spaceStart">
+              <div class="country-select">
+                american
+              </div>
+              <div class="search">
+                <input type="text" placeholder="Search Products">
+                <span class="iconfont icon-sousuo"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div id="header-nav" class="spaceBetween center-main">
+          <div class="logo">
+            <img src="./images/logo.png" alt="">
+          </div>
+          <ul class="nav-list spaceEnd">
+            <li class="active">HOME</li>
+            <li><span>PRODUCTS</span> <i class="iconfont icon-sanjiao"></i></li>
+            <li><span>NEWS</span> <i class="iconfont icon-sanjiao"></i></li>
+            <li><span>FACTORY SHOW</span></li>
+            <li><span>CONTACT US</span></li>
+            <li><span>ABOUT US</span> <i class="iconfont icon-sanjiao"></i></li>
+          </ul>
+        </div>
+      </div>
+      <!-- banner part -->
+      <div class="banner">
+        <div class="swiper-container banner-wrapper">
+          <div class="swiper-wrapper">
+            <a class="swiper-slide" href="#">
+              <div href="#" class="swiper-img">
+                <img src="./images/banner.png" alt="">
+              </div>
+            </a>
+            <a class="swiper-slide" href="#">
+              <div href="#" class="swiper-img">
+                <img src="./images/banner1.png" alt="">
+              </div>
+            </a>
+            <a class="swiper-slide" href="#">
+              <div href="#" class="swiper-img">
+                <img src="./images/banner2.png" alt="">
+              </div>
+            </a>
+          </div>
+          <!-- Add Pagination -->
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+      
+      <!-- feature product -->
+      <div class="feature center-main">
+        <div class="title"><span>FEATURED PRODUCTS</span></div>
+        <div class="swiper-main">
+          <div class="swiper-container feature-swiper">
+            <div class="swiper-wrapper">
+              <a class="swiper-slide" href="#">
+                <div href="#" class="swiper-img">
+                  <img src="./images/product.png" alt="">
+                </div>
+                <p class="swiper-desc">JY-N002</p>
+              </a>
+              <a class="swiper-slide" href="#">
+                <div class="swiper-img">
+                  <img src="./images/product.png" alt="">
+                </div>
+                <p class="swiper-desc">JY-N002</p>
+              </a>
+              <a class="swiper-slide" href="#">
+                <div class="swiper-img">
+                  <img src="./images/product.png" alt="">
+                </div>
+                <p class="swiper-desc">JY-N002</p>
+              </a>
+              <a class="swiper-slide" href="#">
+                <div class="swiper-img">
+                  <img src="./images/product.png" alt="">
+                </div>
+                <p class="swiper-desc">JY-N002</p>
+              </a>
+              <a class="swiper-slide" href="#">
+                <div class="swiper-img">
+                  <img src="./images/product.png" alt="">
+                </div>
+                <p class="swiper-desc">JY-N002</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="iconfont icon-zuohua"></i>
+          </div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+          <div class="swiper-button-next">
+            <i class="iconfont icon-youhua"></i>
+          </div><!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+        </div>
+      </div>
+
+      <!-- feature product -->
+      <div class="feature center-main">
+        <div class="title"><span>HOT PRODUCTS</span></div>
+        <div class="swiper-main">
+          <div class="swiper-container feature-swiper">
+            <div class="swiper-wrapper">
+              <a class="swiper-slide" href="#">
+                <div href="#" class="swiper-img">
+                  <img src="./images/product.png" alt="">
+                </div>
+                <p class="swiper-desc">JY-N002</p>
+              </a>
+              <a class="swiper-slide" href="#">
+                <div class="swiper-img">
+                  <img src="./images/product.png" alt="">
+                </div>
+                <p class="swiper-desc">JY-N002</p>
+              </a>
+              <a class="swiper-slide" href="#">
+                <div class="swiper-img">
+                  <img src="./images/product.png" alt="">
+                </div>
+                <p class="swiper-desc">JY-N002</p>
+              </a>
+              <a class="swiper-slide" href="#">
+                <div class="swiper-img">
+                  <img src="./images/product.png" alt="">
+                </div>
+                <p class="swiper-desc">JY-N002</p>
+              </a>
+            </div>
+          </div>
+          <div class="swiper-button-prev">
+            <i class="iconfont icon-zuohua"></i>
+          </div><!--左箭头。如果放置在swiper-container外面，需要自定义样式。-->
+          <div class="swiper-button-next">
+            <i class="iconfont icon-youhua"></i>
+          </div><!--右箭头。如果放置在swiper-container外面，需要自定义样式。-->
+        </div>
+      </div>
+
+      <div class="quick-links center-main">
+        <div class="title"><span>QUICK LINKS</span></div>
+        <div class="quick-links-part">
+          <a href="#">Ultrasonic Aroma Diffuser</a>
+          <a href="#">Nebulizing/Nebulizer diffuser</a>
+          <a href="#">Humidifier</a>
+          <a href="#">Home diffusers/Office diffusers</a>
+          <a href="#">Car diffusers/USB diffusers</a>
+          <a href="#">Below 100ml</a>
+          <a href="#">100ml to 300ml</a>
+          <a href="#">300ml to 500ml</a> 
+        </div>
+      </div>
+
+      <div class="news-part">
+        <div class="center-main">
+          <div class="title"><span>NEWS</span></div>
+            <div class="new-main spaceBetween">
+              <div class="new-item">
+                <div class="item-img spaceCenter">
+                  <img src="./images/news.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3 class="oneLine">What is the difference between aroma diffuser and asstaroma diffuser and asst</h3>
+                  <p class="twoLine">Essential oil diffuser: Ultrasonic aromatherapy machine is asspecially designed 
+                      for essential oil users. The cavity can be added...</p>
+                </div>
+              </div>
+              <div class="new-item">
+                <div class="item-img spaceCenter">
+                  <img src="./images/news.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3 class="oneLine">What is the difference between aroma diffuser and asstaroma diffuser and asst</h3>
+                  <p class="twoLine">Essential oil diffuser: Ultrasonic aromatherapy machine is asspecially designed 
+                      for essential oil users. The cavity can be added...</p>
+                </div>
+              </div>
+              <div class="new-item">
+                <div class="item-img spaceCenter">
+                  <img src="./images/news.png" alt="">
+                </div>
+                <div class="item-desc">
+                  <h3 class="oneLine">What is the difference between aroma diffuser and asstaroma diffuser and asst</h3>
+                  <p class="twoLine">Essential oil diffuser: Ultrasonic aromatherapy machine is asspecially designed 
+                      for essential oil users. The cavity can be added...</p>
+                </div>
+              </div>
+            </div>
+        </div>
+      </div>
+
+      <div class="about-us center-main">
+        <div class="title"><span>ABOUT US</span></div>
+        <div class="about-us-main">
+          <div class="about-us-img">
+            <img src="./images/about.png" alt="">
+          </div>
+          <div class="about-us-desc">
+            <h3>Janue Life Professional Team</h3>
+            <p>ShenZhen Janue Life Co., LTD  was established in 2012, specialized in aroma diffusers, nebulizing diffusers, car aromatherapy diffusers,  usb aroma diffusers and oral irrigators. Janue Life is a modern high-tech enterprise with integration of scientific research and development manufacturer is one of the well-known manufacturers, enjoy the reputation of the South China ultrasonic aroma diffuser family .</p>
+            <p>With strong R&D capability we have equipped with 500 square meters workshop,100 employees and5 assembly lines.Annual capacity is more than 20,000,000 pieces. We have strictly executed ISO9001:2000 system in the whole process of production, ranging from inspection of raw materials to monitoring of production process.Adopting material with non-toxic,all products passed EMC,FCC,CCC, GS, UL, ROSH. Products are exported to United States, Japan, South Korea Australia, Belgium, France，other Europe country and China .</p>
+            <p>Enterprise has been committed to its motto in production and service:" quality supreme, customers first, excellence pursuance" while it explores constantly to excel and to perfect its management.Greatly enhance our products at home and abroad market share. 5 years of unremitting efforts, the rapid development of the company, with a complete and scientific quality management system, our integrity, strength and quality of products have recognized by customers.  Adhering to the "professional, integrity, innovation, quality...</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="extra-links">
+        <div class="center-main">
+          <a href="#">aroma air diffuser</a>
+          <a href="#">oil wall diffuser</a>
+          <a href="#">500 ml essential oil diffuser for aromatherapy</a>
+          <a href="#">aroma diffuser 100 ml</a>
+          <a href="#">difusores aromaterapia</a>
+          <a href="#">aromatherapy oil nebulizer</a>
+          <a href="#">65ml car air freshener</a>
+          <a href="#">essential oil diffuser portable 2019</a>
+          <a href="#">2018 car humidifier</a>
+          <a href="#">aromatherapy nebulizer for home</a>
+          <a href="#">ceramic essential oil diffuser</a>
+          <a href="#">300ml essential oil diffuser wood</a>
+          <a href="#">essential oil nebulizing diffuser</a>
+          <a href="#">mini fan</a>
+          <a href="#">glass aroma diffuser thailand</a>
+          <a href="#">aroma diffuser battery operated</a>
+          <a href="#">toothbrush holder</a>
+          <a href="#">diffuser</a>
+          <a href="#">100% essential oil diffuser</a>
+          <a href="#">car electric aroma diffuser</a>
+        </div>
+      </div>
+
+      <div id="footer">
+        <div class="center-main spaceBetween">
+          <dl class="contact">
+            <dt>CONTACT</dt>
+            <dd>
+              <i class="iconfont icon-dizhi"></i>
+              <p>
+                Building 2 Fucheng Wanyu Industrial Zone, No.127 Shangnan East Road, 
+                Xinqiao Street, Bao'an , Shenzhen, Guangdong, China
+              </p>
+            </dd>
+            <dd>
+              <i class="iconfont icon-youxiang"></i>
+              <p>
+                <a href="mailto:marketing@januelife.com">marketing@januelife.com</a>
+              </p>
+              <p>
+                <a href="mailto:jacky@januelife.com">jacky@januelife.com</a>
+              </p>
+            </dd>
+            <dd>
+              <i class="iconfont icon-dianhua"></i>
+              <p>86-755-23572823</p>
+            </dd>
+          </dl>
+          <dl class="information">
+            <dt><a href="#">INFORMATION</a></dt>
+            <dd><a href="#">Delivery</a></dd>
+            <dd><a href="#">News</a></dd>
+            <dd><a href="#">Site Map</a></dd>
+          </dl>
+          <dl class="aboutUs">
+            <dt><a href="#">ABOUT US</a></dt>
+            <dd><a href="#">Company Info</a></dd>
+            <dd><a href="#">Certifications</a></dd>
+            <dd><a href="#">Team Service</a></dd>
+          </dl>
+          <dl class="links">
+            <dt>LINKS</dt>
+            <dd class="spaceStart">
+              <a href="#"><i class="iconfont icon-tubiao-3"></i></a>
+              <a href="#"><i class="iconfont icon-tubiao-"></i></a>
+              <a href="#"><i class="iconfont icon-tubiao-4"></i></a>
+              <a href="#"><i class="iconfont icon-tubiao-5"></i></a>
+              <a href="#"><i class="iconfont icon-tubiao-1"></i></a>
+              <a href="#"><i class="iconfont icon-tubiao-2"></i></a>
+              <a href="#"><i class="iconfont icon-tubiao-6"></i></a>
+            </dd>
+          </dl>
+        </div>
+        <div class="copyright">
+          <p>Copyright © 2016 Janue life Co., Ltd ALL RIGHTS RESERVED. </p>
+          <p>Address:Building 2 Fucheng Wanyu Industrial Zone, No.127 Shangnan East Road, Xinqiao Street, Bao'an , Shenzhen, Guangdong, China Tel:0755 2308 9886 Email:sales@januelife.com</p>
+        </div>
+      </div>
+    </div>
   </body>
+  <script src="./js/swiper.min.js"></script>
+  <script>
+    new Vue({
+      el: '#app1',
+      data () {
+        return {
+          msg: 'aaa'
+        }
+      }
+    });
+
+    var swiperBanner = new Swiper('.banner-wrapper', {
+      effect : 'fade',
+      autoHeight: true, //高度随内容变化
+      pagination: {
+        el: '.swiper-pagination',
+        clickable :true,
+      },
+      autoplay : {
+        delay: 5000
+      },
+      watchOverflow: true //因为仅有1个slide，swiper无效
+    });
+
+    var swiper = new Swiper('.feature-swiper', {
+      slidesPerView: 4,
+      spaceBetween: 32,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      }
+    });
+  </script>
 </html>

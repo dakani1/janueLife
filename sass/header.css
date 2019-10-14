@@ -11,22 +11,27 @@
   color: white;
 }
 
+#header #header-aside .header-info li {
+  font-size: 12px;
+}
+
 #header #header-aside .header-info li .icon-youxiang {
   font-size: 18px;
   margin-right: 3px;
 }
 
 #header #header-aside .header-info li .icon-dianhua {
-  font-size: 20px;
+  font-size: 19px;
   margin-right: 3px;
 }
 
-#header #header-aside .header-info li i, #header #header-aside .header-info li span {
+#header #header-aside .header-info li i, #header #header-aside .header-info li a {
   vertical-align: middle;
+  color: white;
 }
 
-#header #header-aside .header-info li span + span {
-  margin-left: 5px;
+#header #header-aside .header-info li a + a {
+  margin-left: 10px;
 }
 
 #header #header-aside .header-info li + li {

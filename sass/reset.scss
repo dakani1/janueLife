@@ -36,6 +36,15 @@ input{
 		color: #000;}
 }
 
+a{
+	color: $fontColor;
+	text-decoration: none;
+	outline: none;
+	&:focus, &:visited, &:link{
+		outline: none;
+	}
+}
+
 textarea{
 	resize: none; 
 	&:focus{ outline:none;}
@@ -120,6 +129,13 @@ body {
 	display: flex;
 	flex-direction: row;
 	justify-content: space-between;
+	align-items: center;
+}
+
+.spaceCenter {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
 	align-items: center;
 }
 
