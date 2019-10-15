@@ -43,10 +43,15 @@ a {
   color: #1a1a1a;
   text-decoration: none;
   outline: none;
+  transition: all 0.3s linear;
 }
 
 a:focus, a:visited, a:link {
   outline: none;
+}
+
+a a:hover {
+  color: #009944;
 }
 
 textarea {

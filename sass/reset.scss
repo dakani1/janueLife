@@ -40,8 +40,12 @@ a{
 	color: $fontColor;
 	text-decoration: none;
 	outline: none;
+	transition: all 0.3s linear;
 	&:focus, &:visited, &:link{
 		outline: none;
+	}
+	a:hover {
+		color: $hoverColor;
 	}
 }
 
