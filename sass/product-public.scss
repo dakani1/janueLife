@@ -1,0 +1,196 @@
+@import './var.scss';
+
+.email-btn{
+  background-color: $hoverColor;
+  color: white;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+}
+.detail-btn{
+  background-color: #eef0f1;
+  color: #1a1a1a;
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  display: inline-block;
+  text-align: center;
+}
+
+.pagination {
+  .el-pagination.is-background {
+    .el-pager {
+      li:not(.disabled).active {
+        background-color: #121212;
+      }
+      li:not(.disabled) {
+        background-color: #f0eeeb;
+      }
+    }
+  }
+  .totalTip {
+    height: 28px;
+    line-height: 28px;
+    background-color: #f0eeeb;
+    padding: 0 6px;
+  }
+}
+
+.product-wrap {
+  padding-top: 60px;
+  padding-bottom: 214px;
+  align-items: flex-start;
+  .product-wrap-nav{
+    width: 354px;
+    .products-items {
+      padding: 0 22px 20px;
+      border: solid 1px #e5e5e5;
+      clear: both;
+      .title {
+        font-size: 18px;
+        line-height: 25px;
+        color: $fontColor;
+        height: 56px;
+        line-height: 56px;
+        border-bottom: 1px solid #e6e6e6;
+      }
+      .product-item {
+        li {
+          border-bottom: 1px solid #e6e6e6;
+          a{
+            display: block;
+            width: 100%;
+            height: 100%;
+            cursor: pointer;
+          }
+          &.active{
+            a {
+              background-color: #f7f5f5; 
+            }
+          }
+        }
+      }
+
+      & + .products-items{
+        margin-top: 40px;
+      }
+    }
+    .products-sort{
+      .products-sort-items {
+       li {
+        height: 40px;
+        line-height: 40px;
+       }
+      }
+    }
+    .product-featured{
+      .product-featured-items {
+        padding-top: 10px;
+        padding-bottom: 10px;
+        li {
+          padding: 10px 0;
+        }
+        .product-img{
+          width: 140px;
+          height: 140px;
+          img{
+            width: 100%;
+            height: 100%;
+          }
+        }
+        .product-info {
+          flex: 1;
+          margin-left: 14px;
+          display: block;
+          p {
+            font-size: $font14;
+            color: $fontColor;
+            margin-bottom: 14px;
+          }
+          .jy-btn {
+            text-align: center;
+            width: 66px;
+            height: 30px;
+            line-height: 30px;
+            background-color: $hoverColor;
+            color: white;
+          }
+        }
+      }
+    }
+
+    .contact-detail{
+      padding-bottom: 0;
+      .contact-item{
+        padding-top: 10px;
+        padding-bottom: 10px;
+        .contact-item-li{
+          align-items: flex-start;
+          padding: 10px 0;
+          .contact-img{
+            background-color: #f1f1f1;
+            width: 30px;
+            height: 30px;
+            color: $hoverColor;
+          }
+          .contact-info {
+            font-size: $font14;
+            line-height: 24px;
+            margin-left: 6px;
+            // padding-top: 4px;
+          }
+        }
+      }
+    }
+  }
+
+  .product-wrap-content {
+    margin-left: 40px;
+    flex: 1;
+    .title{
+      font-size: 20px;
+      line-height: 50px;
+      height: 50px;
+      background-color: #f1f1f1;
+      padding: 0 20px;
+      margin-bottom: 20px;
+    }
+    .mail-consultation-cont{
+      p {
+        font-size: $font16;
+        margin: 0 0 16px;
+      }
+      .mail-consultation-form{
+        .form-wrap{
+          .input-text, .input-textarea{
+            display: block;
+            border: 1px solid #e5e5e5;
+            margin-bottom: 16px;
+            padding: 0 18px;
+            width: 100%;
+          }
+          .input-text {
+            height: 46px;
+            line-height: 1;
+          }
+          .input-textarea {
+            line-height: 24px;
+            font-family: "Microsoft YaHei",Arial, Helvetica, sans-serif;
+          }
+          .input-btn{
+            text-align: center;
+            font-size: $font16;
+            width: 100px;
+            height: 46px;
+            line-height: 46px;
+            background-color: $hoverColor;
+            color: white;
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+}

@@ -29,12 +29,29 @@
               </li>
               <li>
                 <i class="iconfont icon-dianhua"></i>
-                <span>86-755-23572823</span>
+                <span>86-755-23089886</span>
               </li>
             </ul>
             <div class="header-oper spaceStart">
               <div class="country-select">
-                american
+                <div class="selectedCountry">
+                  <p class="spaceStart"><img src="/images/flag/Arab.png" alt=""><span>Arab</span></p>
+                </div>
+                <div class="countryList">
+                  <p class="spaceStart"><img src="/images/flag/Arab.png" alt=""><span>Arab</span></p>
+                  <p class="spaceStart"><img src="/images/flag/France.png" alt=""><span>France</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Germany.png" alt=""><span>Germany</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Italy.png" alt=""><span>Italy</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Japan.png" alt=""><span>Japan</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Korea.png" alt=""><span>Korea</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Netherlands.png" alt=""><span>Netherland</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Portugal.png" alt=""><span>Portugal</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Russia.png" alt=""><span>Russia</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Spain.png" alt=""><span>Spain</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Sweden.png" alt=""><span>Sweden</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Turkey.png" alt=""><span>Turkey</span></p>
+                  <p class="spaceStart"><img src="/images/flag/UK.png" alt=""><span>English</span></p>
+                </div>
               </div>
               <div class="search">
                 <input type="text" placeholder="Search Products">
@@ -48,12 +65,36 @@
             <img src="./images/logo.png" alt="">
           </div>
           <ul class="nav-list spaceEnd">
-            <li class="active">HOME</li>
-            <li><span>PRODUCTS</span> <i class="iconfont icon-sanjiao"></i></li>
-            <li><span>NEWS</span> <i class="iconfont icon-sanjiao"></i></li>
-            <li><span>FACTORY SHOW</span></li>
-            <li><span>CONTACT US</span></li>
-            <li><span>ABOUT US</span> <i class="iconfont icon-sanjiao"></i></li>
+            <li class="active">
+              <p class="nav-list-name"><span>HOME</span></p>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>PRODUCTS</span> <i class="iconfont icon-sanjiao"></i></p>
+              <div class="nav-list-item">
+                <div class="nav-list-item-wrap">
+                  <p>dafas</p>
+                  <p>dafas</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>NEWS</span> <i class="iconfont icon-sanjiao"></i></p>
+              <div class="nav-list-item">
+                <div class="nav-list-item-wrap">
+                  <p>dafas</p>
+                  <p>dafas</p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>FACTORY SHOW</span></p>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>CONTACT US</span></p>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>ABOUT US</span> <i class="iconfont icon-sanjiao"></i></p>
+            </li>
           </ul>
         </div>
       </div>
@@ -245,15 +286,14 @@
           <a href="#">aroma diffuser 100 ml</a>
           <a href="#">difusores aromaterapia</a>
           <a href="#">aromatherapy oil nebulizer</a>
-          <a href="#">65ml car air freshener</a>
+          <a href="#">50ml car air freshener</a>
           <a href="#">essential oil diffuser portable 2019</a>
           <a href="#">2018 car humidifier</a>
           <a href="#">aromatherapy nebulizer for home</a>
           <a href="#">ceramic essential oil diffuser</a>
           <a href="#">300ml essential oil diffuser wood</a>
           <a href="#">essential oil nebulizing diffuser</a>
-          <a href="#">mini fan</a>
-          <a href="#">glass aroma diffuser thailand</a>
+          <a href="#">nebulizing diffuser</a>
           <a href="#">aroma diffuser battery operated</a>
           <a href="#">toothbrush holder</a>
           <a href="#">diffuser</a>
@@ -284,7 +324,7 @@
             </dd>
             <dd>
               <i class="iconfont icon-dianhua"></i>
-              <p>86-755-23572823</p>
+              <p>86-755-23089886</p>
             </dd>
           </dl>
           <dl class="information">
@@ -313,7 +353,7 @@
           </dl>
         </div>
         <div class="copyright">
-          <p>Copyright © 2016 Janue life Co., Ltd ALL RIGHTS RESERVED. </p>
+          <p>Copyright © {{nowYear}} Janue life Co., Ltd ALL RIGHTS RESERVED.  </p>
           <p>Address:Building 2 Fucheng Wanyu Industrial Zone, No.127 Shangnan East Road, Xinqiao Street, Bao'an , Shenzhen, Guangdong, China Tel:0755 2308 9886 Email:sales@januelife.com</p>
         </div>
       </div>
@@ -325,7 +365,7 @@
       el: '#app1',
       data () {
         return {
-          msg: 'aaa'
+          nowYear: new Date().getFullYear()
         }
       }
     });

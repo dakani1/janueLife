@@ -2,30 +2,13 @@
 @import './header.scss';
 @import './footer.scss';
 
-.banner {
-  .swiper-pagination{
-    bottom: 20px!important;
-    .swiper-pagination-bullet {
-      width: 20px;
-      height: 6px;
-      background-color: #828282;
-      transition: all .3s linear;
-      border-radius: 0;
-      &.swiper-pagination-bullet-active{
-        width: 47px;
-        height: 6px;
-        background-color: #009944;
-      }
-    }
-  }
-}
-
 .title {
   margin: 0 auto 73px;
   width: 750px;
   height: 1px;
   background-color: $hoverColor;
   position: relative;
+  z-index: 1000;
 	span {
     white-space: nowrap;
     position: absolute;
@@ -35,31 +18,31 @@
     padding: 0 30px;
     font-size: 36px;
     font-weight: normal;
-    font-stretch: normal;
+    font-stretch: normal; 
     line-height: 25px;
     letter-spacing: 2px;
     color: $fontColor;
     background-color: white;
   }
-}
+}  
 
 .feature{
   padding-top: 94px;
-  .swiper-main{
+  .swiper-main{  
     position: relative;
-    .feature-swiper{
+    .feature-swiper{ 
       .swiper-wrapper{
         .swiper-slide {
           box-sizing: border-box;
           border: solid 1px #e5e5e5;
           .swiper-img{
-            display: flex;
-            flex-direction: row;
+            display: flex;  
+            flex-direction: row; 
             justify-content: center;
             align-items: center;
             padding: 18px;
             img {
-              max-width: 100%;
+              max-width: 100%;  
             }
           }
           .swiper-desc{
@@ -68,7 +51,7 @@
           }
         }
       }
-    }
+    } 
     .swiper-button-prev, .swiper-button-next{
       &:focus{
         outline: none;

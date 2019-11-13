@@ -1,3 +1,8 @@
+#header {
+  position: relative;
+  z-index: 1000;
+}
+
 #header #header-aside {
   height: 60px;
   background-color: #1a1a1a;
@@ -39,10 +44,38 @@
 }
 
 #header #header-aside .header-oper .country-select {
-  height: 26px;
-  line-height: 26px;
-  width: 110px;
+  position: relative;
+  z-index: 1100;
+}
+
+#header #header-aside .header-oper .country-select:hover .countryList {
+  display: block;
+}
+
+#header #header-aside .header-oper .country-select .selectedCountry {
+  height: 27px;
+  width: 130px;
   background-color: white;
+}
+
+#header #header-aside .header-oper .country-select .countryList {
+  position: absolute;
+  left: 0;
+  top: 100%;
+  min-width: 100%;
+  background: white;
+  display: none;
+}
+
+#header #header-aside .header-oper .country-select p {
+  padding: 2px;
+  cursor: pointer;
+}
+
+#header #header-aside .header-oper .country-select p img {
+  width: 34px;
+  vertical-align: middle;
+  margin-right: 10px;
 }
 
 #header #header-aside .header-oper .search {
@@ -79,17 +112,18 @@
 }
 
 #header #header-nav .nav-list li {
-  padding-bottom: 9px;
+  padding-bottom: 2px;
   border-bottom: 2px solid transparent;
   vertical-align: middle;
+  position: relative;
   cursor: pointer;
 }
 
-#header #header-nav .nav-list li span {
+#header #header-nav .nav-list li .nav-list-name span {
   vertical-align: middle;
 }
 
-#header #header-nav .nav-list li i.iconfont {
+#header #header-nav .nav-list li .nav-list-name i.iconfont {
   font-size: 28px;
   margin-left: -6px;
   vertical-align: middle;
@@ -97,14 +131,92 @@
   display: inline-block;
 }
 
-#header #header-nav .nav-list li.active {
+#header #header-nav .nav-list li.active, #header #header-nav .nav-list li:hover {
+  border-bottom-color: #009944;
+}
+
+#header #header-nav .nav-list li.active .nav-list-name, #header #header-nav .nav-list li:hover .nav-list-name {
   border-bottom-color: #009944;
   color: #009944;
-  font-weight: bold;
+}
+
+#header #header-nav .nav-list li.active .nav-list-item, #header #header-nav .nav-list li:hover .nav-list-item {
+  display: block;
+}
+
+#header #header-nav .nav-list li .nav-list-item {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding-top: 6px;
+}
+
+#header #header-nav .nav-list li .nav-list-item .nav-list-item-wrap {
+  min-width: 160px;
+  padding: 16px 11px 22px;
+  background-color: #ffffff;
+  box-shadow: 0px 2px 16px 0px rgba(0, 0, 0, 0.35);
+  border-radius: 4px;
+}
+
+#header #header-nav .nav-list li .nav-list-item .nav-list-item-wrap p {
+  font-size: 12px;
+  font-weight: normal;
+  letter-spacing: 0px;
+  color: #1a1a1a;
+}
+
+#header #header-nav .nav-list li .nav-list-item .nav-list-item-wrap p:hover {
+  color: #009944;
+}
+
+#header #header-nav .nav-list li .nav-list-item .nav-list-item-wrap p + p {
+  margin-top: 24px;
 }
 
 #header #header-nav .nav-list li + li {
   margin-left: 63px;
+}
+
+.banner {
+  position: relative;
+}
+
+.banner .swiper-pagination {
+  bottom: 20px !important;
+}
+
+.banner .swiper-pagination .swiper-pagination-bullet {
+  width: 20px;
+  height: 6px;
+  background-color: #828282;
+  transition: all .3s linear;
+  border-radius: 0;
+}
+
+.banner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
+  width: 47px;
+  height: 6px;
+  background-color: #009944;
+}
+
+.banner .center-main {
+  position: absolute;
+  top: 44px;
+  left: 50%;
+  z-index: 1099;
+  transform: translate(-50%, 0);
+}
+
+.banner .breadcrumbs {
+  font-size: 14px;
+  color: #1a1a1a;
+}
+
+.banner .breadcrumbs i.iconfont {
+  margin-right: 6px;
 }
 
 #footer {
@@ -242,30 +354,13 @@
   color: #666666;
 }
 
-.banner .swiper-pagination {
-  bottom: 20px !important;
-}
-
-.banner .swiper-pagination .swiper-pagination-bullet {
-  width: 20px;
-  height: 6px;
-  background-color: #828282;
-  transition: all .3s linear;
-  border-radius: 0;
-}
-
-.banner .swiper-pagination .swiper-pagination-bullet.swiper-pagination-bullet-active {
-  width: 47px;
-  height: 6px;
-  background-color: #009944;
-}
-
 .title {
   margin: 0 auto 73px;
   width: 750px;
   height: 1px;
   background-color: #009944;
   position: relative;
+  z-index: 1000;
 }
 
 .title span {

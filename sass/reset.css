@@ -2,7 +2,7 @@
   -webkit-overflow-scrolling: touch;
 }
 
-body, div, h1, h2, h3, h4, h5, ul, li, p, span, dl, dt, dd, p {
+body, div, h1, h2, h3, h4, h5, ul, li, p, span, dl, dt, dd, p, a {
   padding: 0;
   margin: 0;
   list-style: none;
@@ -10,7 +10,7 @@ body, div, h1, h2, h3, h4, h5, ul, li, p, span, dl, dt, dd, p {
   font-display: swap;
 }
 
-input, input:focus {
+input, input:focus, textarea, textarea:focus {
   outline: none !important;
   -webkit-box-shadow: none !important;
   -moz-box-shadow: none !important;
@@ -20,7 +20,7 @@ input, input:focus {
   box-sizing: border-box;
 }
 
-input {
+input, textarea {
   -webkit-appearance: none;
   -webkit-box-shadow: none;
   -moz-box-shadow: none;
@@ -28,12 +28,13 @@ input {
   border: 0;
 }
 
-input ::placeholder {
+input ::placeholder, textarea ::placeholder {
   font-size: 12px;
   color: #393939;
+  font-family: "Microsoft YaHei",Arial, Helvetica, sans-serif;
 }
 
-input:-webkit-autofill {
+input:-webkit-autofill, textarea:-webkit-autofill {
   background-color: #ff0000;
   background-image: none;
   color: #000;
