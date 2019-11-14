@@ -13,6 +13,20 @@
       "unicode_decimal": 59013
     },
     {
+      "icon_id": "45937446",
+      "name": "三角",
+      "font_class": "triangle-right",
+      "unicode": "e67d",
+      "unicode_decimal": 59005
+    },
+    {
+      "icon_id": "45937447",
+      "name": "三角",
+      "font_class": "triangle-left",
+      "unicode": "e67e",
+      "unicode_decimal": 59006
+    },
+    {
       "icon_id": "44230832",
       "name": "loading",
       "font_class": "loading1",

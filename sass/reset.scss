@@ -9,6 +9,7 @@ body,div, h1, h2, h3, h4, h5, ul, li, p, span, dl, dt, dd, p, a {
 		list-style: none;
 		box-sizing: border-box;
 		font-display: swap;
+		outline: none;
 }
 
 input, input:focus, textarea, textarea:focus {
@@ -44,8 +45,9 @@ a{
 	transition: all 0.3s linear;
 	&:focus, &:visited, &:link{
 		outline: none;
+		border: 0;
 	}
-	a:hover {
+	&:hover {
 		color: $hoverColor;
 	}
 }
