@@ -222,6 +222,11 @@
       flex-wrap: wrap;
       .new-item{
         width: 100%;
+        .item-desc {
+          p {
+            font-size: $font14;
+          }
+        }
       }
       .new-item + .new-item {
         margin-top: 20px;

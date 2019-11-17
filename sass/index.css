@@ -830,6 +830,9 @@
   .news-part .new-main .new-item {
     width: 100%;
   }
+  .news-part .new-main .new-item .item-desc p {
+    font-size: 14px;
+  }
   .news-part .new-main .new-item + .new-item {
     margin-top: 20px;
   }
