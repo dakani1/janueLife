@@ -19,83 +19,142 @@
   <body>
     <div id="app1">
       <div id="header">
-          <div id="header-aside">
-            <div class="center-main spaceBetween">
-              <ul class="header-info spaceStart">
-                <li>
-                  <i class="iconfont icon-youxiang"></i>
-                  <a href="mailto:marketing@januelife.com">marketing@januelife.com</a><a href="mailto:jacky@januelife.com">jacky@januelife.com</a>
-                </li>
-                <li>
-                  <i class="iconfont icon-dianhua"></i>
-                  <span>86-755-23089886</span>
-                </li>
-              </ul>
-              <div class="header-oper spaceStart">
-                <div class="country-select">
-                  <div class="selectedCountry">
-                    <p class="spaceStart"><img src="/images/flag/Arab.png" alt=""><span>Arab</span></p>
-                  </div>
-                  <div class="countryList">
-                    <p class="spaceStart"><img src="/images/flag/Arab.png" alt=""><span>Arab</span></p>
-                    <p class="spaceStart"><img src="/images/flag/France.png" alt=""><span>France</span></p>
-                    <p class="spaceStart"><img src="/images/flag/Germany.png" alt=""><span>Germany</span></p>
-                    <p class="spaceStart"><img src="/images/flag/Italy.png" alt=""><span>Italy</span></p>
-                    <p class="spaceStart"><img src="/images/flag/Japan.png" alt=""><span>Japan</span></p>
-                    <p class="spaceStart"><img src="/images/flag/Korea.png" alt=""><span>Korea</span></p>
-                    <p class="spaceStart"><img src="/images/flag/Netherlands.png" alt=""><span>Netherland</span></p>
-                    <p class="spaceStart"><img src="/images/flag/Portugal.png" alt=""><span>Portugal</span></p>
-                    <p class="spaceStart"><img src="/images/flag/Russia.png" alt=""><span>Russia</span></p>
-                    <p class="spaceStart"><img src="/images/flag/Spain.png" alt=""><span>Spain</span></p>
-                    <p class="spaceStart"><img src="/images/flag/Sweden.png" alt=""><span>Sweden</span></p>
-                    <p class="spaceStart"><img src="/images/flag/Turkey.png" alt=""><span>Turkey</span></p>
-                    <p class="spaceStart"><img src="/images/flag/UK.png" alt=""><span>English</span></p>
-                  </div>
+        <div id="header-aside">
+          <div class="center-main spaceBetween">
+            <ul class="header-info spaceStart">
+              <li>
+                <i class="iconfont icon-youxiang"></i>
+                <a href="mailto:marketing@januelife.com">marketing@januelife.com</a><a href="mailto:jacky@januelife.com">jacky@januelife.com</a>
+              </li>
+              <li>
+                <i class="iconfont icon-dianhua"></i>
+                <span>86-755-23089886</span>
+              </li>
+            </ul>
+            <div class="header-oper spaceStart">
+              <div class="country-select" @click="showCountryList = !showCountryList">
+                <div class="selectedCountry">
+                  <p class="spaceStart"><img src="/images/flag/Arab.png" alt=""><span>Arab</span></p>
                 </div>
-                <div class="search">
-                  <input type="text" placeholder="Search Products">
-                  <span class="iconfont icon-sousuo"></span>
+                <div class="countryList" v-show="showCountryList">
+                  <p class="spaceStart"><img src="/images/flag/Arab.png" alt=""><span>Arab</span></p>
+                  <p class="spaceStart"><img src="/images/flag/France.png" alt=""><span>France</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Germany.png" alt=""><span>Germany</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Italy.png" alt=""><span>Italy</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Japan.png" alt=""><span>Japan</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Korea.png" alt=""><span>Korea</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Netherlands.png" alt=""><span>Netherland</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Portugal.png" alt=""><span>Portugal</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Russia.png" alt=""><span>Russia</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Spain.png" alt=""><span>Spain</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Sweden.png" alt=""><span>Sweden</span></p>
+                  <p class="spaceStart"><img src="/images/flag/Turkey.png" alt=""><span>Turkey</span></p>
+                  <p class="spaceStart"><img src="/images/flag/UK.png" alt=""><span>English</span></p>
                 </div>
+              </div>
+              <div class="search">
+                <input type="text" placeholder="Search Products">
+                <span class="iconfont icon-sousuo"></span>
               </div>
             </div>
           </div>
-          <div id="header-nav" class="spaceBetween center-main">
-            <div class="logo">
-              <img src="./images/logo.png" alt="">
-            </div>
-            <ul class="nav-list spaceEnd">
-              <li class="active">
-                <p class="nav-list-name"><span>HOME</span></p>
-              </li>
-              <li>
-                <p class="nav-list-name"><span>PRODUCTS</span> <i class="iconfont icon-sanjiao"></i></p>
-                <div class="nav-list-item">
-                  <div class="nav-list-item-wrap">
-                    <p>dafas</p>
-                    <p>dafas</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <p class="nav-list-name"><span>NEWS</span> <i class="iconfont icon-sanjiao"></i></p>
-                <div class="nav-list-item">
-                  <div class="nav-list-item-wrap">
-                    <p>dafas</p>
-                    <p>dafas</p>
-                  </div>
-                </div>
-              </li>
-              <li>
-                <p class="nav-list-name"><span>FACTORY SHOW</span></p>
-              </li>
-              <li>
-                <p class="nav-list-name"><span>CONTACT US</span></p>
-              </li>
-              <li>
-                <p class="nav-list-name"><span>ABOUT US</span> <i class="iconfont icon-sanjiao"></i></p>
-              </li>
-            </ul>
+        </div>
+        <div id="header-nav" class="spaceBetween center-main">
+          <div class="menu-btn" @click="showMobileNav = !showMobileNav"><span class="iconfont icon-caidan"></span></div>
+          <div class="logo">
+            <img src="./images/logo.png" alt="">
           </div>
+          <!-- PC端菜单 -->
+          <ul class="nav-list spaceEnd pcNav">
+            <li class="active">
+              <p class="nav-list-name"><span>HOME</span>
+              </p>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>PRODUCTS</span>
+                <i class="iconfont icon-sanjiao"></i>
+              </p>
+              <div class="nav-list-item">
+                <div class="nav-list-item-wrap">
+                  <p><a href="#">dafas</a></p>
+                  <p><a href="#">dafas</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>NEWS</span>
+                <i class="iconfont icon-sanjiao"></i>
+              </p>
+              <div class="nav-list-item">
+                <div class="nav-list-item-wrap">
+                  <p><a href="#">dafas</a></p>
+                  <p><a href="#">dafas</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>FACTORY SHOW</span>
+              </p>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>CONTACT US</span>
+              </p>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>ABOUT US</span>
+                <i class="iconfont icon-sanjiao"></i>
+              </p>
+            </li>
+          </ul>
+          <!-- mobile端菜单 -->
+          <ul v-if="showMobileNav" class="nav-list spaceEnd mobildNav">
+            <li class="active">
+              <p class="nav-list-name"><span>HOME</span>
+                <i class="iconfont icon-jiantou2 mobile-icon"></i>
+              </p>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>PRODUCTS</span>
+                <i class="iconfont icon-sanjiao"></i>
+                <i class="iconfont icon-jiahao mobile-icon"></i>
+              </p>
+              <div class="nav-list-item">
+                <div class="nav-list-item-wrap">
+                  <p><a href="#">dafas</a></p>
+                  <p><a href="#">dafas</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>NEWS</span>
+                <i class="iconfont icon-sanjiao"></i>
+                <i class="iconfont icon-jiahao mobile-icon"></i>
+              </p>
+              <div class="nav-list-item">
+                <div class="nav-list-item-wrap">
+                  <p><a href="#">dafas</a></p>
+                  <p><a href="#">dafas</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>FACTORY SHOW</span>
+                <i class="iconfont icon-jiantou2 mobile-icon"></i>
+              </p>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>CONTACT US</span>
+                <i class="iconfont icon-jiantou2 mobile-icon"></i>
+              </p>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>ABOUT US</span>
+                <i class="iconfont icon-sanjiao"></i>
+                <i class="iconfont icon-jiantou2 mobile-icon"></i>
+              </p>
+            </li>
+          </ul>
+        </div>
       </div>
       <div id="footer">
         <div class="center-main spaceBetween">
@@ -159,7 +218,9 @@
       el: '#app1',
       data () {
         return {
-          nowYear: new Date().getFullYear()
+          nowYear: new Date().getFullYear(),
+          showMobileNav: false,
+          showCountryList: false
         }
       }
     })

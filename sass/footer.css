@@ -1,12 +1,11 @@
 #footer {
   color: white;
-  padding: 40px 0 0;
+  padding: 40px 0 46px;
   background-color: #121212;
 }
 
 #footer .spaceBetween {
   align-items: flex-start;
-  padding-bottom: 46px;
 }
 
 #footer a {
@@ -115,8 +114,9 @@
   color: #ff517c;
 }
 
-#footer .links dd a + a {
-  margin-left: 10px;
+#footer .links dd a {
+  margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 #footer .copyright {
@@ -131,4 +131,55 @@
   font-stretch: normal;
   line-height: 20px;
   color: #666666;
+}
+
+@media screen and (max-width: 1600px) {
+  #footer .links {
+    width: 320px;
+  }
+  #footer .links dd {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  #footer .center-main {
+    flex-wrap: wrap;
+  }
+  #footer .center-main .links {
+    width: 100%;
+  }
+  #footer .contact, #footer .aboutUs, #footer .information, #footer .links {
+    margin-bottom: 26px;
+  }
+}
+
+@media screen and (max-width: 997px) {
+  #footer {
+    padding: 20px 0 0;
+  }
+  #footer .contact, #footer .aboutUs, #footer .information, #footer .links {
+    width: 100%;
+  }
+  #footer .contact dt, #footer .aboutUs dt, #footer .information dt, #footer .links dt {
+    width: 100%;
+    margin-bottom: 12px;
+    font-size: 18px;
+  }
+  #footer .aboutUs, #footer .information {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: wrap;
+  }
+  #footer .aboutUs dd, #footer .information dd {
+    width: 33%;
+  }
+  #footer .aboutUs dd + dd, #footer .information dd + dd {
+    margin-top: 0;
+  }
+  #footer .links dd a i {
+    font-size: 48px;
+  }
 }

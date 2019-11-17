@@ -173,3 +173,27 @@ body {
   justify-content: space-around;
   align-items: center;
 }
+
+@media screen and (max-width: 1600px) {
+  .center-main {
+    width: 1200px;
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .center-main {
+    width: 970px;
+  }
+}
+
+@media screen and (max-width: 997px) {
+  .center-main {
+    width: 96%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .center-main {
+    width: 96%;
+  }
+}

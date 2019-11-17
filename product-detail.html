@@ -33,11 +33,11 @@
               </li>
             </ul>
             <div class="header-oper spaceStart">
-              <div class="country-select">
+              <div class="country-select" @click="showCountryList = !showCountryList">
                 <div class="selectedCountry">
                   <p class="spaceStart"><img src="/images/flag/Arab.png" alt=""><span>Arab</span></p>
                 </div>
-                <div class="countryList">
+                <div class="countryList" v-show="showCountryList">
                   <p class="spaceStart"><img src="/images/flag/Arab.png" alt=""><span>Arab</span></p>
                   <p class="spaceStart"><img src="/images/flag/France.png" alt=""><span>France</span></p>
                   <p class="spaceStart"><img src="/images/flag/Germany.png" alt=""><span>Germany</span></p>
@@ -61,39 +61,98 @@
           </div>
         </div>
         <div id="header-nav" class="spaceBetween center-main">
+          <div class="menu-btn" @click="showMobileNav = !showMobileNav"><span class="iconfont icon-caidan"></span></div>
           <div class="logo">
             <img src="./images/logo.png" alt="">
           </div>
-          <ul class="nav-list spaceEnd">
+          <!-- PC端菜单 -->
+          <ul class="nav-list spaceEnd pcNav">
             <li class="active">
-              <p class="nav-list-name"><span>HOME</span></p>
+              <p class="nav-list-name"><span>HOME</span>
+              </p>
             </li>
             <li>
-              <p class="nav-list-name"><span>PRODUCTS</span> <i class="iconfont icon-sanjiao"></i></p>
+              <p class="nav-list-name"><span>PRODUCTS</span>
+                <i class="iconfont icon-sanjiao"></i>
+              </p>
               <div class="nav-list-item">
                 <div class="nav-list-item-wrap">
-                  <p>dafas</p>
-                  <p>dafas</p>
+                  <p><a href="#">dafas</a></p>
+                  <p><a href="#">dafas</a></p>
                 </div>
               </div>
             </li>
             <li>
-              <p class="nav-list-name"><span>NEWS</span> <i class="iconfont icon-sanjiao"></i></p>
+              <p class="nav-list-name"><span>NEWS</span>
+                <i class="iconfont icon-sanjiao"></i>
+              </p>
               <div class="nav-list-item">
                 <div class="nav-list-item-wrap">
-                  <p>dafas</p>
-                  <p>dafas</p>
+                  <p><a href="#">dafas</a></p>
+                  <p><a href="#">dafas</a></p>
                 </div>
               </div>
             </li>
             <li>
-              <p class="nav-list-name"><span>FACTORY SHOW</span></p>
+              <p class="nav-list-name"><span>FACTORY SHOW</span>
+              </p>
             </li>
             <li>
-              <p class="nav-list-name"><span>CONTACT US</span></p>
+              <p class="nav-list-name"><span>CONTACT US</span>
+              </p>
             </li>
             <li>
-              <p class="nav-list-name"><span>ABOUT US</span> <i class="iconfont icon-sanjiao"></i></p>
+              <p class="nav-list-name"><span>ABOUT US</span>
+                <i class="iconfont icon-sanjiao"></i>
+              </p>
+            </li>
+          </ul>
+          <!-- mobile端菜单 -->
+          <ul v-if="showMobileNav" class="nav-list spaceEnd mobildNav">
+            <li class="active">
+              <p class="nav-list-name"><span>HOME</span>
+                <i class="iconfont icon-jiantou2 mobile-icon"></i>
+              </p>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>PRODUCTS</span>
+                <i class="iconfont icon-sanjiao"></i>
+                <i class="iconfont icon-jiahao mobile-icon"></i>
+              </p>
+              <div class="nav-list-item">
+                <div class="nav-list-item-wrap">
+                  <p><a href="#">dafas</a></p>
+                  <p><a href="#">dafas</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>NEWS</span>
+                <i class="iconfont icon-sanjiao"></i>
+                <i class="iconfont icon-jiahao mobile-icon"></i>
+              </p>
+              <div class="nav-list-item">
+                <div class="nav-list-item-wrap">
+                  <p><a href="#">dafas</a></p>
+                  <p><a href="#">dafas</a></p>
+                </div>
+              </div>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>FACTORY SHOW</span>
+                <i class="iconfont icon-jiantou2 mobile-icon"></i>
+              </p>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>CONTACT US</span>
+                <i class="iconfont icon-jiantou2 mobile-icon"></i>
+              </p>
+            </li>
+            <li>
+              <p class="nav-list-name"><span>ABOUT US</span>
+                <i class="iconfont icon-sanjiao"></i>
+                <i class="iconfont icon-jiantou2 mobile-icon"></i>
+              </p>
             </li>
           </ul>
         </div>
@@ -327,6 +386,19 @@
                   </div>
                 </div>
               </div>
+              <div class="product-package">
+                <h2 class="product-name">Packing</h2>
+                <div class="product-package-desc">
+                  <p>
+                    All our diffusers are packed in singel neautral box safely, mass production in carton case approved by drop test. We accept OEM package if order fulfill our MOQ. Please 
+                    contact us freely if you have the query. 
+                    A Joyful Aromatic Life, not only describes "JX"  brand but it is also our commitment to our clients and their environment. We provide an innovative air quality solution to 
+                    satisfy the demands of our users.
+                    we can help you achieve your visions and goals JX is committed to providing people a long lasting, relaxed and joyful environment by improving their air quality.These 
+                    types of organizations will not have a complete control over the quality of your products. They are price driven only shops.
+                  </p>
+                </div>
+              </div>
             </div>
           </div>
           <!-- 邮件，联系表单, 公共部分 -->
@@ -414,7 +486,9 @@
       el: '#app1',
       data () {
         return {
-          nowYear: new Date().getFullYear()
+          nowYear: new Date().getFullYear(),
+          showMobileNav: false,
+          showCountryList: false
         }
       }
     });

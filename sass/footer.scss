@@ -2,11 +2,10 @@
 @import "./var.scss";
 #footer{
   color: white;
-  padding: 40px 0 0;
+  padding: 40px 0 46px;
   background-color: #121212;
   .spaceBetween{
     align-items: flex-start;
-    padding-bottom: 46px;
   }
   a {
     color: white;
@@ -76,8 +75,9 @@
         i.icon-tubiao-2{color: #c5161b;}
         i.icon-tubiao-6{color: #ff517c;}
       }
-      a + a {
-        margin-left: 10px;
+      a {
+        margin-right: 10px;
+        margin-bottom: 10px;
       }
     }
   }
@@ -92,6 +92,68 @@
       font-stretch: normal;
       line-height: $font20;
       color: #666666;
+    }
+  }
+}
+
+@media screen and (max-width: 1600px) {
+  #footer{
+    .links {
+      width: 320px;
+      dd {
+        flex-wrap: wrap;
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  #footer{
+    .center-main {
+      flex-wrap: wrap;
+      .links {
+        width: 100%;
+    }
+    }
+    .contact, .aboutUs, .information, .links {
+      margin-bottom: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 997px) {
+  #footer{
+    padding: 20px 0 0;
+    .contact, .aboutUs, .information, .links {
+      width: 100%;
+      dt {
+        width: 100%;
+        margin-bottom: 12px;
+        font-size: 18px;
+      }
+    }
+    .aboutUs, .information {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      dd {
+        width: 33%;
+      }
+      dd + dd {
+        margin-top: 0;
+      }
+    }
+
+    .links {
+      dd {
+        a {
+          i {
+            font-size: 48px;
+          }
+        }
+      }
     }
   }
 }

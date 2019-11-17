@@ -168,3 +168,27 @@ body {
 }
 
 // theme special 
+
+@media screen and (max-width: 1600px) {
+	.center-main {  //外围包裹元素宽度，并居中
+		width: 1200px;
+	}
+}
+
+@media screen and (max-width: 1220px) {
+	.center-main {  //外围包裹元素宽度，并居中
+		width: 970px;
+	}
+}
+
+@media screen and (max-width: 997px) {
+	.center-main {  //外围包裹元素宽度，并居中
+		width: 96%;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.center-main {  //外围包裹元素宽度，并居中
+		width: 96%;
+	}
+}

@@ -181,6 +181,10 @@
   line-height: 1;
 }
 
+.product-wrap .product-wrap-content .mail-consultation-cont .mail-consultation-form .form-wrap .input-text::placeholder {
+  font-size: 14px;
+}
+
 .product-wrap .product-wrap-content .mail-consultation-cont .mail-consultation-form .form-wrap .input-textarea {
   line-height: 24px;
   font-family: "Microsoft YaHei",Arial, Helvetica, sans-serif;
@@ -195,4 +199,17 @@
   background-color: #009944;
   color: white;
   cursor: pointer;
+}
+
+@media screen and (max-width: 997px) {
+  .product-wrap {
+    padding-top: 40px;
+    display: block;
+  }
+  .product-wrap .product-wrap-nav {
+    display: none;
+  }
+  .product-wrap .product-wrap-content {
+    margin-left: 0;
+  }
 }

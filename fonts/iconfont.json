@@ -48,6 +48,20 @@
       "unicode_decimal": 58970
     },
     {
+      "icon_id": "46001565",
+      "name": "箭头3",
+      "font_class": "jiantou",
+      "unicode": "e6b6",
+      "unicode_decimal": 59062
+    },
+    {
+      "icon_id": "46001566",
+      "name": "箭头4",
+      "font_class": "jiantou1",
+      "unicode": "e6b5",
+      "unicode_decimal": 59061
+    },
+    {
       "icon_id": "44464639",
       "name": "home",
       "font_class": "home",
@@ -67,6 +81,41 @@
       "font_class": "Loading1",
       "unicode": "e65d",
       "unicode_decimal": 58973
+    },
+    {
+      "icon_id": "46001567",
+      "name": "箭头",
+      "font_class": "jiantou2",
+      "unicode": "e60e",
+      "unicode_decimal": 58894
+    },
+    {
+      "icon_id": "46001568",
+      "name": "加号",
+      "font_class": "jiahao",
+      "unicode": "e603",
+      "unicode_decimal": 58883
+    },
+    {
+      "icon_id": "46001569",
+      "name": "菜单",
+      "font_class": "caidan",
+      "unicode": "e65c",
+      "unicode_decimal": 58972
+    },
+    {
+      "icon_id": "46001570",
+      "name": "返回顶部",
+      "font_class": "fanhuidingbu",
+      "unicode": "e60a",
+      "unicode_decimal": 58890
+    },
+    {
+      "icon_id": "46001571",
+      "name": "箭头 左 left",
+      "font_class": "jiantouzuo",
+      "unicode": "e634",
+      "unicode_decimal": 58932
     },
     {
       "icon_id": "43509096",
