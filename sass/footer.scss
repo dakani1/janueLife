@@ -4,6 +4,31 @@
   color: white;
   padding: 40px 0 46px;
   background-color: #121212;
+  .windowSide{
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 60px;
+    z-index: 99;
+    .people{
+      padding: 22px 0;
+      background: $hoverColor;
+      border-radius: 4px 0px 0px 4px;
+      i {
+        font-size: 35px;
+        color: white;
+      }
+    }
+    .backTop{
+      padding: 16px 0;
+      background: $fontColor;
+      border-radius: 4px 0px 0px 4px;
+      i {
+        font-size: 28px;
+        color: white;
+      }
+    }
+  }
   .spaceBetween{
     align-items: flex-start;
   }
@@ -124,6 +149,31 @@
 @media screen and (max-width: 997px) {
   #footer{
     padding: 20px 0 0;
+    .windowSide{
+      position: fixed;
+      right: 0;
+      top: 50%;
+      width: 48px;
+      z-index: 99;
+      .people{
+        padding: 14px 0;
+        background: $hoverColor;
+        border-radius: 4px 0px 0px 4px;
+        i {
+          font-size: 22px;
+          color: white;
+        }
+      }
+      .backTop{
+        padding: 10px 0;
+        background: $fontColor;
+        border-radius: 4px 0px 0px 4px;
+        i {
+          font-size: 18px;
+          color: white;
+        }
+      }
+    }
     .contact, .aboutUs, .information, .links {
       width: 100%;
       dt {

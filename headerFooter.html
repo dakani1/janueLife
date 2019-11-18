@@ -156,7 +156,11 @@
           </ul>
         </div>
       </div>
-      <div id="footer">
+      <div id="footer"><div class="windowSide">           <span class='people spaceCenter'><i class="iconfont icon-kefu"></i></span>           <span class="backTop spaceCenter" @click="backToTop"><i class="iconfont icon-fanhuidingbu"></i></span>         </div>
+        <div class="windowSide">
+          <span class='people spaceCenter'><i class="iconfont icon-kefu"></i></span>
+          <span class="backTop spaceCenter" @click="backToTop"><i class="iconfont icon-fanhuidingbu"></i></span>
+        </div>
         <div class="center-main spaceBetween">
           <dl class="contact">
             <dt>CONTACT</dt>
@@ -221,6 +225,13 @@
           nowYear: new Date().getFullYear(),
           showMobileNav: false,
           showCountryList: false
+        }
+      },
+      methods: {
+        backToTop () {
+          var tgtObj = document.body.offsetTop || document.documentElement.offsetTop
+          document.body.scrollTop = 0
+          document.documentElement.scrollTop = 0
         }
       }
     })
