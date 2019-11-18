@@ -178,6 +178,7 @@
   font-weight: normal;
   letter-spacing: 0px;
   color: #1a1a1a;
+  word-break: break-all;
 }
 
 #header #header-nav .nav-list.pcNav li .nav-list-item .nav-list-item-wrap p:hover {
@@ -356,6 +357,7 @@
     font-weight: normal;
     letter-spacing: 0px;
     color: #1a1a1a;
+    word-break: break-all;
   }
   #header #header-nav .nav-list.mobildNav li .nav-list-item .nav-list-item-wrap p:hover {
     color: #009944;
@@ -416,6 +418,36 @@
   color: white;
   padding: 40px 0 46px;
   background-color: #121212;
+}
+
+#footer .windowSide {
+  position: fixed;
+  right: 0;
+  top: 50%;
+  width: 60px;
+  z-index: 99;
+}
+
+#footer .windowSide .people {
+  padding: 22px 0;
+  background: #009944;
+  border-radius: 4px 0px 0px 4px;
+}
+
+#footer .windowSide .people i {
+  font-size: 35px;
+  color: white;
+}
+
+#footer .windowSide .backTop {
+  padding: 16px 0;
+  background: #1a1a1a;
+  border-radius: 4px 0px 0px 4px;
+}
+
+#footer .windowSide .backTop i {
+  font-size: 28px;
+  color: white;
 }
 
 #footer .spaceBetween {
@@ -571,6 +603,31 @@
 @media screen and (max-width: 997px) {
   #footer {
     padding: 20px 0 0;
+  }
+  #footer .windowSide {
+    position: fixed;
+    right: 0;
+    top: 50%;
+    width: 48px;
+    z-index: 99;
+  }
+  #footer .windowSide .people {
+    padding: 14px 0;
+    background: #009944;
+    border-radius: 4px 0px 0px 4px;
+  }
+  #footer .windowSide .people i {
+    font-size: 22px;
+    color: white;
+  }
+  #footer .windowSide .backTop {
+    padding: 10px 0;
+    background: #1a1a1a;
+    border-radius: 4px 0px 0px 4px;
+  }
+  #footer .windowSide .backTop i {
+    font-size: 18px;
+    color: white;
   }
   #footer .contact, #footer .aboutUs, #footer .information, #footer .links {
     width: 100%;
